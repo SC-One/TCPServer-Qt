@@ -22,6 +22,7 @@ public:
     int socketSize() const;
 signals:
     void newData(TemporaryId, const QByteArray &);
+    void newSocketAdded(TemporaryId);
     void socketDeleted(TemporaryId);
     void stateChanged(TemporaryId , QAbstractSocket::SocketState);
 private:
